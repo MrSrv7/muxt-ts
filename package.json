@@ -1,0 +1,30 @@
+{
+  "name": "muxt-ts-context",
+  "version": "0.1.0",
+  "private": false,
+  "description": "This project is a Next.js application built with Material-UI (MUI) and TypeScript. It incorporates a global context using React's useContext hook for theme management as an example.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.2",
+    "@mui/material": "^5.13.4",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "typescript": "5.1.3"
+  }
+}
