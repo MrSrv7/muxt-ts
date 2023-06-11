@@ -4,7 +4,7 @@ export const appColors = {
   light: "#eee",
   dark: "#222",
   secondary: {
-    dark: blue[100],
-    light: blue[900],
+    light: "#0B1D51",
+    dark: blue[500],
   },
 };
