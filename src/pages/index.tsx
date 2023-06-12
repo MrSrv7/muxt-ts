@@ -20,10 +20,20 @@ const Homepage = () => {
   const stackDirection = isMobile ? "column" : "row";
 
   return (
-    <>
+    <section
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        paddingBottom: 32,
+      }}
+    >
       <Typography color={"secondary"} mt={0}>
         MUXT TS is a NextJS app example built with <strong> Typescript </strong>
-        and MUI based on <a href="https://github.com/HPouyanmehr/muxt-ts">HPouyanmehr&apos;s </a>
+        and MUI based on{" "}
+        <a href="https://github.com/HPouyanmehr/muxt-ts">HPouyanmehr&apos;s </a>
         repository but with ReactJS&apos;s <strong> useContext </strong> API to
         provide the context to the application globally. In this application, we
         will implement the context (using useContext API) for theming where the
@@ -31,7 +41,7 @@ const Homepage = () => {
         and getters.
       </Typography>
 
-      <Typography my={4}>
+      <Typography mt={4}>
         Following are some of the component examples
       </Typography>
 
@@ -118,7 +128,7 @@ const Homepage = () => {
       <Snackbar
         anchorOrigin={{ horizontal: "center", vertical: "bottom" }}
         open={snackbarState}
-        // autoHideDuration={6000}
+        autoHideDuration={6000}
         onClose={() => setSnackbarState(false)}
         message="MUI Snackbar"
         color="secondary"
@@ -142,7 +152,7 @@ const Homepage = () => {
           </IconButton>
         }
       />
-    </>
+    </section>
   );
 };
 
