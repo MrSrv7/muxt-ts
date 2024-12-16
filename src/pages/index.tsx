@@ -10,6 +10,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 import { useScreenSize } from "@/hooks/useScreenSize";
 
 const Homepage = () => {
@@ -18,6 +19,13 @@ const Homepage = () => {
   const { isMobile } = useScreenSize();
 
   const stackDirection = isMobile ? "column" : "row";
+
+  const handleGitHubClick = () =>
+    window.open(
+      "https://github.com/MrSrv7/muxt-ts",
+      "_blank",
+      "noopener,noreferrer"
+    );
 
   return (
     <section
@@ -31,7 +39,8 @@ const Homepage = () => {
       }}
     >
       <Typography color={"secondary"} mt={0}>
-        MUXT TS is a NextJS app example built with <strong> Typescript </strong>
+        <a href="https://github.com/MrSrv7/muxt-ts">MUXT TS</a> is a NextJS app
+        example built with <strong> Typescript </strong>
         and MUI based on{" "}
         <a href="https://github.com/HPouyanmehr/muxt-ts">HPouyanmehr&apos;s </a>
         repository but with ReactJS&apos;s <strong> useContext </strong> API to
@@ -40,6 +49,20 @@ const Homepage = () => {
         user can toggle the themes (light/dark) with useContext&apos;s actions
         and getters.
       </Typography>
+
+      {/* Generate a simple Button component with GitHub as label and with GitHub icon from the react-icons library */}
+      <Button
+        variant="contained"
+        startIcon={<FaGithub />}
+        onClick={handleGitHubClick}
+        sx={{
+          textTransform: "none",
+          textDecoration: "underline",
+          mt: 4,
+        }}
+      >
+        View on GitHub
+      </Button>
 
       <Typography mt={4}>
         Following are some of the component examples
